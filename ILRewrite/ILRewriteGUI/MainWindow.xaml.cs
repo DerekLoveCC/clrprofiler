@@ -156,6 +156,7 @@ namespace ILRewriteGUI
 				app.StartInfo.FileName = appPath.Text;
 				app.StartInfo.UseShellExecute = false;
 				app.StartInfo.EnvironmentVariables.Add("COR_ENABLE_PROFILING", "1");
+				app.StartInfo.EnvironmentVariables.Add("COR_PROFILER_PATH", @"D:\Derek\GitHub\clrprofiler\ILRewrite\x64\Debug\ILRewriteProfiler.dll");
 				app.StartInfo.EnvironmentVariables.Add("COR_PROFILER", "{FA8F1DFF-0B62-4F84-887F-ECAC69A65DD3}");
 				app.Start();
 			}
